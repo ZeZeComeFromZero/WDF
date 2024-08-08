@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+
+<title>Scope</title>	
+	</head>
+	
+	<body>
+		<h1><b>Scope </b></h1>
+
+		<script type="text/javascript">
+
+        const name = 'Su Su';
+            console.log(name);
+
+              //name = "Kyaw Kyaw"; //Error
+            //const name = "Yu Yu"; //Error
+
+
+
+            let city = "Yangon";
+                city = "Mandalay";
+            //let city = "Bago"; //Error 
+            console.log(city);
+
+            var country = "Myanmar";
+                country = "Thailand";
+            var country = 'Indonesia';
+            console.log(country);
+
+
+        
+            // for(const a=0;a < 10;a++){
+            //     console.log(a);
+            // }
+    
+            // for(let b=0;b < 10;b++){
+            //     console.log(b);
+            // }
+
+            // console.log("b outside value=" ,b);
+
+                for(var c=0;c < 10;c++){
+                        console.log(c);
+                }
+                console.log("c outside value=" ,c);
+
+
+
+
+                //Differences of Var,let , const
+
+                const num1 = 3;
+                let num2 = 2;
+                var num3 = 1;
+
+                    // for(const num1=0;a < 10;a++){
+            //     console.log(a); //Error
+            // }
+            //  console.log("num1 outside value=" ,num1);
+    
+            for(let num2=0;num2 < 10;num2++){
+                console.log(num2);
+            }
+
+            console.log("num2 outside value=" ,num2);
+
+            for(var num3=0;num3 < 10;num3++){
+                        console.log(num3);
+                }
+                console.log("num3 outside value=" ,num3);
+
+//Objects
+
+        const customer = {
+            name:"Aung Aung",
+            age:"24",
+            city:"yangon"
+
+        }
+
+        console.log(customer);
+        console.log(customer.name);
+        console.log(customer.age);
+
+        customer.PhNo = 7689342;
+        console.log(customer.PhNo);
+
+        // customer = {
+        //     citizen:"Myanmar"
+        // };
+        // console.log(customer);     //Error
+        //--------------------------------------
+
+
+        //Array 
+
+        const colors = ["red","blue","green"];
+        console.log(colors);
+
+        colors[0] = "White";
+        console.log(colors);
+
+        colors[3] = "Violet"; 
+        console.log(colors);
+
+        // colors = ["blue","red"];
+        // console.log(colors);
+
+
+// let nae var ka array 1 khu lone overight loz ya dl
+
+
+
+//---------------------------------------------------------------
+
+
+//Function Scope 
+
+const d = 10;
+let e = 20;
+var f = 30;
+
+function funone(){
+    console.log(d+e+f);
+}
+
+funone();
+
+function funtwo(){
+    const g = 1;
+    let h = 2;
+    var i = 3;
+    console.log(g+h+i);
+}
+
+funtwo();
+
+
+
+console.log("Global Scope variable = ",d);
+
+console.log("Global Scope variable = ",e);
+
+console.log("Global Scope variable = ",f);
+
+// console.log("Global Scope variable = ",g);
+
+// console.log("Global Scope variable = ",h);
+
+// console.log("Global Scope variable = ",i);
+
+
+//-----------------------------------
+//Overide
+
+const j = 1;
+let k = 2;
+var l = 3;
+
+
+
+
+function funfour(){
+    j = 10;
+    k = 20;
+    l = 30;
+
+    console.log("j value assigned with const = ",j);
+    console.log("k value assigned with let = ",k);
+    console.log("l value assigned with var = ",l);
+}
+
+// funfour();
+
+    console.log("j value assigned outside with let = ",j);
+  console.log("k value assigned outside with let = ",k);
+    console.log("l value assigned outside with var = ",l);
+
+    //-------------------------------
+
+    //New Declare
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		</script>
+		
+	</body>
+	
+
+	
+	
+</html>

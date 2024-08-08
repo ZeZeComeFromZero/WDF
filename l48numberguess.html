@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+     
+<head>
+    <title>Number Guess</title>
+
+   <!-- <link href="./css/l48numberguess.css" rel="stylesheet" type="text/css" />  -->
+
+    <style type="text/css">
+
+        body{
+            font-family: sans-serif;
+            background-color: #f4f4f4;
+
+            height: 100vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            overflow: hidden;   /* scroll ma lo tae ah khar tway mhr use tl .... */
+
+        }
+
+        .form-control,.btn{
+            border-style: solid;
+            padding: 10px;
+        }
+
+        .gameform span{
+            display: block;
+            margin-top: 5px;
+        }
+
+        .message1{
+            color: #f4f4f4  ;
+        }
+
+        .message2{
+            color: #f4f4f4  ;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class = "container">
+
+        <h1> Numbere Guess</h1>
+        <p> Guess a number betweeen <span class = "minnumber">00</span> to <span class = "maxnumber">00</span></p>
+
+        <form id ="gameform" class="gameform" action = "" method="">
+
+            <div class="form-group">
+                <input type="number" name="guessnumber" id="guessnumber" class = "form-group" placeholder="Enter your guess number...." autofocus/>
+                <input type="submit" id="btn" class="btn" />
+            </div>
+
+            <span class="message1">Message 1</span>
+            <span class="message2">Message 2</span>
+
+        </form>
+    </div>
+
+   
+
+    <script src="./js/l48numberguess.js" type="text/javascript">
+
+
+
+
+
+
+    </script>
+
+
+
+
+</body>
+
+
+
+</html>

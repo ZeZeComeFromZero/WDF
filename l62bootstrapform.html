@@ -1,0 +1,200 @@
+<!DOCTYPE html> 
+
+<htm>
+<head>
+    <title>Bootstrap Form</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet"/>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+   <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">   <!--  lite version ll shi dl -->
+
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- 0 to 5 
+
+        margin               = m-5
+        margin- top          = mt-5
+        margin- bottom      = mb-5
+        margin- left        = ms-5
+        margin- right       = me-5
+        magrin left & right = mx-5
+        magrin top & bottom = my-5
+
+        padding               = p-5
+        padding- top          = pt-5
+        padding- bottom      = pb-5
+        padding- left        = ps-5
+        padding- right       = pe-5
+        padding left & right = px-5
+        padding top & bottom = py-5 -->
+
+        <form action="" method="" enctype="multipart/form-data">
+
+            <div class="row">
+                
+                <div class="col-md-6 form-group mb-3">
+                    <label for="firstname">First Name</label>
+                    <input type="text" name="firstname" id="firstname" class="form-control rounded-0" placeholder="Enter your first name"/>
+                </div>
+
+                <div class="col-md-6 form-group mb-3">
+                    <label for="lastname">Last Name</label>
+                    <input type="text" name="lastname" id="lastname" class="form-control rounded-0" placeholder="Enter your last name"/>
+                </div>
+
+                <div class="col-md-6 form-group mb-3">
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email" class="form-control rounded-0" placeholder="Enter your last name"/>
+                </div>
+
+                <div class="col-md-6 form-group mb-3">
+                    <label for="email">Password</label>
+                    <input type="password" name="password" id="password" class="form-control rounded-0" placeholder="Enter your password name"/>
+                </div>
+
+                <div class="col-md-6 form-group mb-3">
+                    <label for="country">Country</label>
+                   <select name="country" id="country" class="form-select">   <!-- select tah mhr form-control ma use ya -->
+                        <option selected disabled>Choose Country</option>
+                        <option value="mm">Myanmar</option>
+                        <option value="mm">Thailand</option>
+                        <option value="mm">Singapore</option>
+                        <option value="mm">Japan</option>
+                    </select>
+                </div>
+
+                <div class="col-md-6 form-group mb-3">
+                    <label for="role">Role</label>
+                   <select name="role" id="role" class="form-select" multiple>   <!-- select tah mhr form-control ma use ya -->              
+                        <option value="ad">Admin</option>
+                        <option value="mg">Manager</option>
+                        <option value="ed">Editor</option>
+                        <option value="sp">SuperVisor</option>
+                    </select>
+                </div>
+
+                <div class="col-md-6 form-group mb-3">
+                    <label>Gender</label>
+
+                    <div class="form-check">
+                        <input type="radio" name="gender" id="genderm" class="form-check-input" value="1"/>
+                        <label for="genderm">Male</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input type="radio" name="gender" id="genderf" class="form-check-input" value="0"/>
+                        <label for="genderf">Female</label>
+                    </div>                   
+                    
+                </div>
+
+                <div class="col-md-6 form-group mb-3">
+                    <label>Music</label>
+
+                    <div class="form-check">
+                        <input type="checkbox" name="favmusic" id="favpop" class="form-check-input" value="1"/>
+                        <label for="favpop">Pop</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input type="checkbox" name="favmusic" id="favrock" class="form-check-input" value="2"/>
+                        <label for="favrock">Rock</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input type="checkbox" name="favmusic" id="favcountry" class="form-check-input" value="3"/>
+                        <label for="favcountry">Country</label>
+                    </div>
+                </div>
+
+                <div class="col-md-6 form-group mb-3">
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" name="dob" id="dob" class="form-control form-control-md rounded-0"   />
+                </div>
+
+                <div class="col-md-6 form-group mb-3">
+                    <label for="nrc">NRC</label>
+                    <input type="file" name="nrc" id="nrcc" class="form-control rounded-0"/>
+                </div>
+
+                <div class="col-md-6 form-group mb-3">
+                    <label for="score">Score</label>
+                    <input type="range" name="score" id="score" class="form-range" min="0" max="100" step="10" value="0"/>
+                </div>
+
+                <div class="col-md-6 form-group mb-3">
+                    <label for="bio">Bio</label>
+                    <textarea name="bio" id="bio" class="form-control rounded-0">Enter your bio</textarea> 
+                </div>
+
+                <div class="col-md-12 mb-3">
+                    <div class="form-check form-switch">
+                        <input type="checkbox" name="agree" name="agree" class="form-check-input" value="1"/>
+                         <label for="agree">I agree wit terms and conditions</label>
+                    </div>
+                 </div>
+
+               <div class="col-md-12">
+                <div class="d-flex justify-content-end">
+                    <button type="button" class="btn btn-danger btn-sm-rounded-0 me-3">
+                        Cancel
+                    </button>
+                    <button type="button" class="btn btn-primary btn-sm-rounded-0">
+                        Submit
+                    </button>
+                </div>
+               </div>
+
+
+
+            </div>
+
+
+
+        </form>
+
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
+
+   <script type="text/javascript">
+
+
+    $(document).ready(function(){
+        //console.log("i");
+       
+        //for role
+        $('#role').select2();
+
+        //for dob
+        $('#dob').flatpickr({
+            enableTime: true,
+            dateFormat: "Y-m-d H:i",
+
+            maxDate: "2018-12",
+            minDate: "today"
+        });
+
+        //for Bio
+        $('#bio').summernote();
+    })
+
+</script>
+
+</body>
+
+
+</html>

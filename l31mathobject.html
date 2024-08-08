@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+
+<head> 
+
+<title>Math Object</title>
+
+</head>
+
+<body>
+
+
+
+    <script type="text/javascript">
+
+let cal; 
+
+cal = 2.8;
+cal = Math.round(2.5); //use the nearest full number
+cal = Math.round(2.1);
+
+
+cal = Math.ceil(2.0); //2
+cal = Math.ceil(2.1); //3
+cal = Math.ceil(2.5); //3
+
+cal = Math.floor(2.1); //2
+cal = Math.floor(2.6); //2
+cal = Math.floor(2.9); //2
+cal = Math.floor(2.0); //2
+
+
+
+//Square root 
+cal = Math.sqrt(64); //8
+
+//Power (base,power)
+cal = Math.pow(3,3);  //27
+
+
+//Absoulute value
+cal = Math.abs(23); //23
+cal = Math.abs(23.57); //23.57
+cal = Math.abs(-23); //23
+cal = Math.abs(-23.72); //23.72
+
+
+//Minimum & Maximum number
+cal = Math.min(5,3,9,-3,6,-1,0,5,73);  //-3
+cal = Math.max(6,3,-4,0,24,9,2,-45,7);  //9
+
+
+//Random number
+cal = Math.random() *100;
+cal = Math.random() *1000;
+cal = Math.floor(Math.random() *100000);  
+
+
+
+
+console.log(cal);
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+       <title> Date and Time </title>
+    
+    </head>
+
+    <body>
+
+        <div class="footer"> 
+            <small>Copyright <span id="autoyear">2023</span> Cable news network. A warner bros.</small>
+
+        </div>
+
+
+
+
+
+        <script type="text/javascript">
+
+            let date = new Date; //class or object
+console.log(date);
+console.log(new Date());
+
+
+
+// let getdate = new Date().getDate(); //class method
+            let getDate = date.getDate();
+
+console.log(getDate);
+
+let hour = date.getHours();
+console.log(hour);
+
+let minute = date.getMinutes();
+console.log(minute);
+
+let second = date.getSeconds();
+console.log(second);
+
+// 1s=1000ms 
+
+let time = date.getTime();
+console.log(time);
+
+let now = Date.now;
+console.log(now); 
+
+let year = date.getFullYear();
+console.log(year);
+
+//Coordinted Universal Time 
+let utcyear = date.getUTCFullYear();
+console.log(utcyear);
+
+document.getElementById("autoyear").innerText = year;
+//document.getElementById("autoyear").textContent = year;
+//document.getElementById("autoyear").innerHTML = year;
+
+
+//  let birthday = new Date('9-13-2000');
+ let birthday = new Date('September-13-2000 04:40:2000');
+ //  let birthday = new Date('9/13/2000 04:04:20 ');
+console.log(birthday);
+
+
+birthday.setMonth(3); //April
+birthday.setDate(3);
+birthday.setFullYear(2024);
+birthday.setHours(15);
+birthday.setMinutes(3);
+birthday.setSeconds(3);
+
+        </script>
+    </body>
+
+
+
+
+
+
+</html>

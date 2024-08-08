@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jQuery Intro</title>
+    </head>
+
+    <body>
+        
+        <h1>J query Intro </h1>
+
+    <div>
+
+        <h1 id="wel" class="come">Welcome</h1>
+        <h3 id="mm" class="mm">Myanmar</h3>
+        <h3 id="th" class="th">Thailand</h3>
+        <h3 id="jp" class="jp">Japan</h3>
+        <h3 id="sg" class="sg">Singapore</h3>
+
+    </div>
+
+
+
+        <script src="https://code.jquery.com/jquery-3.7.1.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            console.log('jj');
+
+            $(document).ready(function(){
+                console.log("hey");
+                console.warn("I am js warn");
+
+               // window.alert('hey i am alert');
+
+            //    if(window.confirm("are u sure")){
+            //     console.log("yes dj;sj")
+            //    }else{
+            //     console.log("no ;dnan");
+            //    }
+
+            // instead of getelementbyid 
+            // $('tagname');
+            // $('#id');
+            // $('.class');
+
+          //  $('h1').fadeOut();
+        //   $('h1').fadeOut(1000);
+        //   $('.mm').fadeOut(2000);
+        //   $('#th').fadeOut(3000);
+
+                        //speed , opacity
+        // $('#jp').fadeTo(3000,0.5);
+
+
+
+        // $('#sg').fadeToggle();
+        // $('#sg').fadeToggle();
+        // $('#sg').fadeToggle();
+        // $('#sg').fadeToggle();
+
+        $('#sg').fadeToggle(3000);
+        $('#sg').fadeToggle(5000);
+
+            });
+        </script>
+    </body>
+</html>

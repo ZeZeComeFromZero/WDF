@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+
+<title>Array Method</title>	
+	</head>
+	
+	<body>
+		<h1><b>Array Method </b></h1>
+
+		<script type="text/javascript">
+
+        let arrcolors = ["red","green","blue","white","black","pink"];
+        console.log(arrcolors);
+
+        //indexof(value)
+        console.log(arrcolors.indexOf("black"));
+        console.log(arrcolors.indexOf("orange")); //-1
+
+        //Array.isArray(array)
+        const name = "aung aung"
+        console.log(Array.isArray(name));
+        console.log(Array.isArray(arrcolors));
+
+        //join('delimitor')
+        console.log(String(arrcolors));
+        console.log(arrcolors.toString());
+        console.log(arrcolors.join());
+        console.log(arrcolors.join(""));
+
+        //......................................
+
+        const candys = ["red","green","blue","white","black","pink"]
+
+        candys[5] = "pink";
+        candys[1] = "skyblue";
+
+        console.log(candys);
+        console.log(candys.length);
+
+        //push     (add value at the end of the array)
+        candys.push("orange");
+        candys.push("gold");
+
+        console.log(candys);
+        console.log(candys.length);
+
+            //unshift (add value at the start of the array)
+
+            candys.unshift("orange1");
+            candys.unshift("green");
+            candys.unshift("silver","steelblue");
+
+            console.log(candys);
+        console.log(candys.length);
+
+        //shift (remove value and index at the start of the array)
+
+        candys.shift();
+        candys.shift();
+        console.log(candys);
+        console.log(candys.length);
+
+
+        //pop (remove value and index at the end of the array)
+        
+        candys.pop();
+        console.log(candys);
+        console.log(candys.length);
+
+
+
+        //delete (remove only value but not index)
+
+        delete candys[1];
+        delete candys[5];
+
+        console.log(candys);
+        console.log(candys.length);
+
+        //splice  ( start , end)
+
+        const paints = candys.splice(0,5);
+        console.log(paints);
+
+        //concat() (addition the strings)
+
+        const arr1 = ['aung aung','maung maung','tun tun'];
+        const arr2 = ['su su','yu yu','lu lu'];
+        const arr3 =  [10,20,30];
+
+        console.log(arr1+arr2);
+        console.log(arr1.concat(arr2));
+        console.log(arr3.concat(arr2));
+
+        //sort  
+        const combine = arr1.concat(arr1);
+        console.log(combine);
+        console.log(combine[3]);
+
+        console.log(combine.sort());
+
+        //reverse
+        console.log(combine.reverse());
+
+
+        const arrnos = [45,233,455,235,8453,235,576,23];
+        console.log(arrnos);
+        console.log(arnos.sort());
+
+
+
+
+        //****To be Continued
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		</script>
+		
+	</body>
+	
+
+	
+	
+</html>

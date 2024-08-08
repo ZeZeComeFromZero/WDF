@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+
+<title>Array</title>	
+	</head>
+	
+	<body>
+		<h1><b>Array</b></h1>
+
+		<script type="text/javascript">
+
+
+			let arrgirls = new Array("susu","lu lu","hla hla");
+			console.log(arrgirls);
+			console.table(arrgirls);
+
+
+			const arrboys = ["mg mg","naung naung","kyaw kyaw","zaw zaw",200];
+			console.info(arrboys);
+			console.table(arrboys);
+			console.log(arrboys[1]);
+			console.log(typeof arrboys[3]);
+
+
+			let my = ['hello',319,true,undefined,null,new Date(),['red','green'],{firstname:"kyaw kyaw",city:"yangon"}];
+			console.log(my);
+			console.log(my.length);
+			console.log(my[0]);
+			console.log(my[6][1]);
+			console.log(my[7]);
+			console.log(my[7].firstname);
+			console.log(my[7].city);
+
+
+			let colors = ['red','green','blue'];
+				colors = ['brown','yellow'];
+				console.log(colors);
+
+
+			let paints = [];
+			paints[0] = 'white';
+			paints[1] = 'red';
+			paints[5] = 'blue';
+			paints[4] = 'green';
+			paints[3] = 'pink';
+			paints[0] = 'black';
+			console.log(paints);
+			console.log(paints.length);
+			console.log(paints[2]);
+
+
+
+			let animals = ['cats','dogs'];
+			animals[2] = 'cow';
+			animals[4] = 'owl';
+			animals[5] = 'pussy';
+			console.log(animals);
+
+
+			// Nested Array
+
+			const nest = [
+				['red','green','blue'],
+				['cmk','rgba','hlsa'],
+				['cannon','epson',['laseer','ink']]
+			]
+
+
+			console.log(nest);
+			console.log(nest.length);
+			console.log(nest[0]);
+			console.log(nest[1][1]);
+			console.log(nest[2][2][1]);
+		
+		</script>
+		
+	</body>
+	
+
+	
+	
+</html>

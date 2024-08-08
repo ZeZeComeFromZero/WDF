@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html> 
+
+
+<head>
+
+    <title>Type Conversion</title>
+</head>
+
+<body> 
+
+    <h1><b>Type Conversion</b></h1>
+
+    <script type="text/javascript">
+
+        // let val;
+        // val = "aung aung";
+
+        // console.log(val);
+        // console.log(typeof val);
+        // console.log(val.length);
+
+        let val = true;
+            val = String(val);
+
+            console.log(val); //true
+            console.log(typeof val); //boolean
+            console.log(val.length); 
+
+             val = new Date();  //new date
+            val = String(new Date());
+            
+            console.log(val); //date
+            console.log(typeof val); //object
+            console.log(val.length); 
+        
+
+            val = "[1,2,3,4,5]";  //n1,2,3,4,5]
+            val = String([1,2,3,4,5]);
+            
+            console.log(val); //1,2,3,4,5
+            console.log(typeof val); //object
+            console.log(val.length); 
+        
+
+//------------------------------------------------
+            //String to number 
+
+
+            val = "20";  
+            // val = Number(val)
+            val = +val;
+            val = +"20";
+            
+            console.log(val); //20
+            console.log(typeof val); //number
+            console.log(val.length); undefined
+        
+
+
+            // val = Number(prompt("Enter First number"));
+            val = +prompt("Enter First number");
+            
+            console.log(val); //20
+            console.log(typeof val); //number
+            console.log(val.length); undefined
+
+
+
+            val = Number('aung aung'); //NaN
+            val = +'aung aung';  //nan
+            val = Number([1,2,3,4,5]); //nan
+
+            console.log(val); //20
+            console.log(typeof val); //number
+            console.log(val.length); undefined
+
+            val = 4 + "9";
+            val = 4 + +"9";
+            console.log(val); //
+            console.log(typeof val); //number
+            console.log(val.length); undefined
+
+    </script>
+
+
+</body>
+</html>

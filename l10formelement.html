@@ -1,0 +1,111 @@
+<html>
+	<head>
+
+<title>Form Element</title>	
+	</head>
+	
+	<body>
+		<h1>Heading Tag</h1>
+		<fieldset>
+			<legend>This is a sample form</legend>
+		<form action="" method="" enctype="multipart/form-data">
+			
+			<label for="firstname"> First Name </label>
+			<input type="text" name="firstname" id="firstname" class="" placedholder="Enter your First name" autocomplete="off" autofocus minlength="2" maxlength="5" required spellcheck="false" />
+			
+			
+			<br><br/>
+			
+			<label for="lastname"> last Name </label>
+			<input type="text" name="lastname" id="lastname" class="" placeholder="Enter your Last Name" autocomplete="off"	/>
+		
+		<br><br/>		
+			
+			<label for="password"> Password </label>
+			<input type="password" name="password" id="number" class="" placeholder="Enter your password"/>
+	
+		<br><br/>
+			<label for="Number"> Age </label>
+			<input type="number" name="Number" id="number" class="" placeholder="Enter your age" min="18" max="50" required/>
+			
+			<br><br>
+		<label>GENDEr</label>
+		<input type="radio" name="gender" id="genderm" class="" value="1" /><label for="genderm">Male</label>
+		<input type="radio" name="gender" id="genderf" class="" value="2" /><label for="genderf">Female</label>
+		
+		<br><br/>
+		
+		<label>Choose ur fav colour</label>
+		<input type="checkbox" name="favcolur" id="favr" class="" value"1" /><label for="favr">Red</label>
+		<input type="checkbox" name="favcolur" id="favb" class="" value="2"/><label for="favb">Blue</label>
+		<input type="checkbox" name="favcolur" id="favg" class="" value="3"/><label for="favg">Green</label>
+
+
+		<br><br/>
+		
+		<label for="country">Citizen</label>
+		<select name="country" id="country" class="">
+
+			<option selected disabled>Choose Country</option>
+		<option value="mm" >Myanmar</option>
+			<option value="Sin" >Singapore</option>
+				<option value="Phi">Phlippines</option>
+		<option value="phi">Thailand</option>
+		
+		</select>
+		
+		<label for="role">Role</label>
+		<select name="role" id="role" class="" multiple>
+			
+			<option selected disabled>Choose Ur role</option>
+		<option value="1" >Myanmar</option>
+			<option value="2" >Singapore</option>
+				<option value="3">Phlippines</option>
+		<option value="4">Thailand</option>
+		
+		</select>
+		
+			<label for="DoD"> Date of Birth </label>
+			<input type="date" name="DoD" id="date" class="" />
+			
+				<label for="bookingtime"> booking time  </label>
+			<input type="time" name="bookingtime" id="bookingtime" class="" />
+			
+			<label for="apt"> Appointment time  </label>
+			<input type="datetime-local" name="apt" id="apt" class="" />
+			
+			<br></br>
+			<label for="volumn"> Volumne  </label>
+			<input type="range" name="volumn" id="apt" class="" min="0" max="100" value="100" step="10"	 />
+			
+				<br></br>
+			<label for="nrc"> NRC  </label>
+			<input type="file" name="nrc" id="nrc" class="" accept="image/*" capture="user"	multiple />
+			
+				<label for="vdo"> video </label>
+			<input type="file" name="vdo" id="vdo" class="" accept="video/*" capture="environment"	 />
+			
+			<label for="email"> Enter your email </label>
+			<input type="email" name="email" id="email" class="" placeholder="Enter your email" />
+			
+			<label for="bio"> Bio </label>
+			<textarea name="bio" id="bio" class="" rows="3" placeholder="Enter your bio"></textarea>
+			
+			
+			<input type="text" name="bio" id="bio" class="" hidden />
+			<input type="hidden" name="bio" id="bio" class="" />
+			
+			
+						<input type="reset" name="login" id="login" class="" value="Cancel" />
+			<input type="button" name="login" id="login" class="" value="Login" />
+			<button type="button" name="register" id="register" class="">Register</button>
+			
+				<input type="submit" name="logins" id="logins" class="" value="Sign Up" />
+			<button type="submit" name="submit" id="submit" class="">Submit</button>
+		</form>
+		</fieldset>
+	</body>
+	
+	
+	
+</html>
